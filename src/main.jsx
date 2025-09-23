@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router'
 import Catalog from './pages/Catalog.jsx'
 import Dog from './pages/Dog.jsx'
 
+
 const router = createHashRouter([
   {
     path: "/",
