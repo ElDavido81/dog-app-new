@@ -1,4 +1,6 @@
 import { Link, useLocation, useParams } from "react-router";
+import DogBreed from "../components/DogBreed";
+import DogPresent from "../components/DogPresent";
 
 function Dog() {
     const {selecteddog} = useParams();
@@ -8,10 +10,12 @@ function Dog() {
 
 return (
 <>
-    <h2>{dog.name}</h2>
+    <h2>{dog.name} <DogPresent dog={dog}/></h2>
     <img src={dog.img}/>
-    <p>{dog.breed}</p>
-    <p>{dog.sex}</p>
+    {/* <p>{dog.breed}</p> */}
+    <p>
+<DogBreed dog={dog} />
+    </p>
     <p>{dog.age}</p>
     <p>{dog.owner.name}</p>
     <Link to ="/catalog">All dogs</Link><br></br>
