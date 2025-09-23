@@ -17,7 +17,7 @@ const router = createHashRouter([
     Component: Catalog,
   },
   {
-    path: "/dog",
+    path: "/dog/:selecteddog",
     Component: Dog,
   }
 ])

@@ -30,7 +30,8 @@ return (
     <ul>
 {data.map((item, index) => (
     <li key={index}>
-    <Link to="../dog">{item.name}</Link>
+    {/* <Link to={`/dog/${encodeURIComponent(item.name)}`}>{item.name}</Link> */}
+    <Link to={`/dog/${item.name}`} state={{ dog: item }}>{item.name}</Link>
     </li>
 ))}
     </ul>
