@@ -1,16 +1,16 @@
 const DogPresent = ({dog}) => {
 
+console.log(dog.present);
+
     return (
         <>
-        
-        {dog.present === 'true' ? (
+        {dog.present ? (
             <>🟢</>
         ) : (
             <>🔴</>
         )}
         </>
     )
-
 }
 
 export default DogPresent;

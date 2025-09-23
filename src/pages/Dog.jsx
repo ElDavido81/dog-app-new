@@ -12,7 +12,6 @@ return (
 <>
     <h2>{dog.name} <DogPresent dog={dog}/></h2>
     <img src={dog.img}/>
-    {/* <p>{dog.breed}</p> */}
     <p>
 <DogBreed dog={dog} />
     </p>
