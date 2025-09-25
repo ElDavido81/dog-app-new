@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -52,6 +53,42 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 3em 1fr 3em;
+    grid-template-rows: 1fr 1fr 4em;
+    height: 100%;
+    width: 100%;
+} */
+
+/* .header, .footer {
+    grid-column: 1 / 4;
+} */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;   
+}
+
+.footer {
+  background-color: burlywood;
+}
+
+.list {
+  background-color: #535bf2;
+}
+
+.side {
+  background-color: burlywood;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (prefers-color-scheme: light) {

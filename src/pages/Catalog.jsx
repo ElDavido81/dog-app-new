@@ -5,12 +5,12 @@ function Catalog() {
 
 return (
     <>
-    <h1>Catalog</h1>
-
+        <div>
+        <Link to="/">««</Link><br></br>
+    </div>
+    <div className="list">
     <DataList></DataList>
-
-    <Link to="/">Home</Link><br></br>
-
+    </div>
     </>
 )
 

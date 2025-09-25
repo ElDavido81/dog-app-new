@@ -5,8 +5,9 @@ function App() {
 
   return (
     <>
-    <h1>Doggy Daycare</h1>
-    <Link to="/catalog">Catalog</Link>
+    <Link to="/catalog">
+    <button id="start">asdf</button>
+    </Link>
     </>
   )
 }
