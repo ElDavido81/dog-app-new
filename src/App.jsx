@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import DataList from "./components/DataList";
 import './App.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
     <Link to="/catalog">
-    <button id="start">asdf</button>
+    <button id="start" onClick={<DataList></DataList>}></button>
     </Link>
     </>
   )

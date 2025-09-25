@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router";
+import DogPresent from "./DogPresent";
 
 const DataList = () => {
 
@@ -27,14 +28,15 @@ const DataList = () => {
     }, []);
 
 return (
-    <ul>
+    <div>
 {data.map((item, index) => (
-    <li key={index}>
-    {/* <Link to={`/dog/${encodeURIComponent(item.name)}`}>{item.name}</Link> */}
+    <div class="doglist" key={index}>
+    <img src={item.img} class="dog"/>
     <Link to={`/dog/${item.name}`} state={{ dog: item }}>{item.name}</Link>
-    </li>
+    <DogPresent dog={item}></DogPresent>
+    </div>
 ))}
-    </ul>
+    </div>
 );
 };
 
