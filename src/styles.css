@@ -18,6 +18,16 @@ background-color:white;
 padding: 0px;
 }
 
+h3 {
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-weight: 800;
+}
+
+a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
 .middle {
 display: flex;
 flex-direction: row;
@@ -42,14 +52,37 @@ background-color: white;
 main {
 flex: 1;
 padding: 0px;
-margin: 0;
+margin: 0px;
 background-color: white;
 }
 
-#start {
+button.menu_back {
+    padding: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    background-color: #ccffff;
+    border-style: none;
+    border-radius: 30px 12px 12px 30px;
+
+}
+
+button.menu_home {
+    padding: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    background-color: #ccffff;
+    border-style: none;
+    border-radius: 30px 30px 12px 12px;
+
+}
+
+button.start {
     width: 15em;
     height: 15em;
     padding: 5px;
+    margin: 20px;
     border-radius: 50%;
     border-style: none;
     background-image: url('./assets/paw.png');
@@ -68,7 +101,7 @@ vertical-align: top;
 img.dog {
 width: 50px;
 height: 50px;
-border-radius: 20px;
+border-radius: 15px;
 margin: 5px;
 }
 
@@ -80,11 +113,61 @@ margin: 5px;
     padding: 5px;
     margin: 10px;
     background: #ccffff;
-    border-radius: 25px;
+    border-radius: 18px;
     text-align: left;
     vertical-align: middle;
+    text-decoration-color: black;
 }
 
-.lamp {
-    font-size: 50px;
+.doginfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    background: #ccffff;
+    border-radius: 18px;
+    text-align: left;
+}
+
+img.lamp {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+img.lamp_info {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+img.bigdog {
+    border-radius: 15px;
+}
+
+
+div.menu_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 10px;
+}
+
+div.dogdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+}
+
+div.dogname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
 }

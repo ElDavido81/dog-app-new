@@ -1,3 +1,7 @@
+import greenLamp from '../assets/green.png';
+import greenOffLamp from '../assets/greenOff.png';
+import redLamp from '../assets/red.png';
+
 const DogPresent = ({dog}) => {
 
 console.log(dog.present);
@@ -5,9 +9,10 @@ console.log(dog.present);
     return (
         <>
         {dog.present ? (
-            <p class="lamp">🟢</p>
+                <img src={greenLamp} className="lamp" />
+            
         ) : (
-            <p class="lamp">🔴</p>
+            <img src={greenOffLamp} className="lamp" />
         )}
         </>
     )

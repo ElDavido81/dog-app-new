@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Link to="/catalog">
-    <button id="start" onClick={<DataList></DataList>}></button>
+    <button className="start" onClick={<DataList></DataList>}></button>
     </Link>
     </>
   )

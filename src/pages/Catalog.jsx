@@ -5,12 +5,16 @@ function Catalog() {
 
 return (
     <>
-        <div>
-        <Link to="/">««</Link><br></br>
+    <div className="menu_top">
+        <Link to="/">
+        <button className="menu_back">HOME</button>
+        </Link>
     </div>
+    
     <div className="list">
     <DataList></DataList>
     </div>
+    
     </>
 )
 

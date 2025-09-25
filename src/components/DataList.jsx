@@ -32,7 +32,7 @@ return (
 {data.map((item, index) => (
     <div class="doglist" key={index}>
     <img src={item.img} class="dog"/>
-    <Link to={`/dog/${item.name}`} state={{ dog: item }}>{item.name}</Link>
+    <h3><Link to={`/dog/${item.name}`} state={{ dog: item }}>{item.name}</Link></h3>
     <DogPresent dog={item}></DogPresent>
     </div>
 ))}

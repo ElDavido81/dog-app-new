@@ -3,10 +3,10 @@ const DogBreed = ({dog}) => {
 return (
 
 <>
-{dog.breed === 'male' ? (
-    <>♂️</>
+{dog.sex === 'male' ? (
+    <h3>♂️</h3>
 ) : (
-    <>♀️</>
+    <h3>♀️</h3>
 )}
 </>
 

@@ -10,15 +10,30 @@ function Dog() {
 
 return (
 <>
-    <h2>{dog.name} <DogPresent dog={dog}/></h2>
-    <img src={dog.img}/>
-    <p>
-<DogBreed dog={dog} />
-    </p>
-    <p>{dog.age}</p>
-    <p>{dog.owner.name}</p>
-    <Link to ="/catalog">All dogs</Link><br></br>
-    <Link to ="/">Home</Link>
+<div className="menu_top">
+        <Link to="/catalog">
+        <button className="menu_back">DOGS</button>
+        </Link>
+        <DogPresent dog={dog}/>
+        <Link to ="/">
+        <button className="menu_home">HOME</button>
+        </Link>
+</div>
+
+<div className="doginfo">
+        <img src={dog.img} className="bigdog"/>
+
+    <div className="dogname">
+        <h2>{dog.name}</h2>
+        <DogBreed dog={dog} />
+    </div>
+    
+    <div className="dogdetails">
+        {dog.owner.name}: {dog.owner.phoneNumber}
+    </div>
+
+</div>
+
 </>
 )
 
