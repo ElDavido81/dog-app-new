@@ -9,6 +9,7 @@ function App() {
     <Link to="/catalog">
     <button className="start" onClick={<DataList></DataList>}></button>
     </Link>
+    <h3>Welcome - press paw...</h3>
     </>
   )
 }

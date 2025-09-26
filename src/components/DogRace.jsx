@@ -1,9 +1,0 @@
-const DogRace ({dog}) => {
-
-return (
-
-
-    
-)
-
-}
