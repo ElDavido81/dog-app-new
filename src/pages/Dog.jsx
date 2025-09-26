@@ -29,7 +29,9 @@ return (
     </div>
     
     <div className="dogdetails">
-        {dog.owner.name}: {dog.owner.phoneNumber}
+        <b>Owner:</b> {dog.owner.name} 📞 {dog.owner.phoneNumber}<br></br>
+        # {dog.chipNumber}
+
     </div>
 
 </div>
