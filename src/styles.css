@@ -47,6 +47,8 @@ background-color: white;
 #list {
     flex-grow: 1;
     background-color: rgb(255, 221, 177);
+    height: 60vh;
+    overflow: auto;
 }
 
 main {
